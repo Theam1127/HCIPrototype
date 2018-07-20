@@ -2,5 +2,6 @@
     <string name="app_name">HCI Prototype</string>
     <string name="lostpassword"><u>Forgot password</u></string>
     <string name="password">Password</string>
+    <string name="twoway">Buy two-way Ticket?</string>
 
 </resources>
