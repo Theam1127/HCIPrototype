@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SelectBusActivity">
+        <activity android:name=".MakePayment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".SelectTaskActivity" />
         <activity android:name=".PurchaseTicketActivity" />
-        <!--<activity android:name=".SelectBusActivity"/> -->
+        <!-- <activity android:name=".SelectBusActivity"/> -->
+        <activity android:name=".SelectSeat" />
+        <!--<activity android:name=".MakePayment"></activity>-->
     </application>
 
 </manifest>
