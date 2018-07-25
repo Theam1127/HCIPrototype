@@ -5,6 +5,8 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -19,8 +21,9 @@ public class PurchaseTicketActivity extends AppCompatActivity {
     int day_calendar2 = 0;
     int month_calendar2 = 0;
     int year_calendar2 = 0;
-
-    TextView dateSelectTV, dateSelect2TV;
+    CheckBox checkbox;
+    TextView dateSelectTV, dateSelect2TV, tv2,tv3,tv4,tv6;
+    Spinner spinner5, spinner6, spinner8;
     String date, date2;
     DatePickerDialog datePickerDialog;
 
@@ -28,6 +31,42 @@ public class PurchaseTicketActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_ticket);
+        checkbox = findViewById(R.id.checkBox);
+        tv2 = findViewById(R.id.textView2);
+        tv3 = findViewById(R.id.textView3);
+        tv4 = findViewById(R.id.textView4);
+        tv6 = findViewById(R.id.textView6);
+        spinner5 = findViewById(R.id.spinner5);
+        spinner6 = findViewById(R.id.spinner6);
+        spinner8 = findViewById(R.id.spinner8);
+
+        dateSelect2TV = (TextView)findViewById(R.id.dateSelect2TV);
+
+        checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    tv2.setVisibility(View.VISIBLE);
+                    tv3.setVisibility(View.VISIBLE);
+                    tv4.setVisibility(View.VISIBLE);
+                    tv6.setVisibility(View.VISIBLE);
+                    spinner5.setVisibility(View.VISIBLE);
+                    spinner6.setVisibility(View.VISIBLE);
+                    spinner8.setVisibility(View.VISIBLE);
+                    dateSelect2TV.setVisibility(View.VISIBLE);
+                }
+                else{
+                    tv2.setVisibility(View.GONE);
+                    tv3.setVisibility(View.GONE);
+                    tv4.setVisibility(View.GONE);
+                    tv6.setVisibility(View.GONE);
+                    spinner5.setVisibility(View.GONE);
+                    spinner6.setVisibility(View.GONE);
+                    spinner8.setVisibility(View.GONE);
+                    dateSelect2TV.setVisibility(View.GONE);
+                }
+            }
+        });
 
         dateSelectTV = (TextView)findViewById(R.id.dateSelectTV);
         dateSelectTV.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +100,6 @@ public class PurchaseTicketActivity extends AppCompatActivity {
             }
         });
 
-        dateSelect2TV = (TextView)findViewById(R.id.dateSelect2TV);
         dateSelect2TV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
