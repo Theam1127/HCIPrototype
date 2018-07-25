@@ -6,7 +6,7 @@
     <string-array name="report_type">
         <item>Monthly Sales</item>
     </string-array>
-    <string name="taptorecord"><u>Tap to Select</u></string>
+    <string name="taptoselect"><u>Tap to Select</u></string>
 
 
 </resources>
