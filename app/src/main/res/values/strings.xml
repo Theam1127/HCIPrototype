@@ -7,6 +7,12 @@
         <item>Monthly Sales</item>
     </string-array>
     <string name="taptoselect"><u>Tap to Select</u></string>
+    <string-array name="country">
+    <item>Malaysia</item>
+    <item>Singapore</item>
+    <item>China</item>
+    <item>United State America</item>
+</string-array>
 
 
 </resources>
