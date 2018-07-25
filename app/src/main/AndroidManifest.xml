@@ -10,17 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MakePayment">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".SelectTaskActivity" />
-        <activity android:name=".PurchaseTicketActivity" />
+        <activity android:name=".PurchaseTicketActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <!-- <activity android:name=".SelectBusActivity"/> -->
-        <activity android:name=".SelectSeat" />
-        <!--<activity android:name=".MakePayment"></activity>-->
+        <activity android:name=".SelectSeat" />        <!--<activity android:name=".MakePayment"></activity>-->
     </application>
 
 </manifest>

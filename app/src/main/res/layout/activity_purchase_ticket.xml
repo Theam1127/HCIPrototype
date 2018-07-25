@@ -23,18 +23,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/destinationTV"
+        android:id="@+id/departureTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="84dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="20dp"
-        android:text="Destination"
+        android:text="Depature"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/dateTV"
+        android:id="@+id/destinationTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="88dp"
@@ -42,10 +42,10 @@
         android:layout_marginTop="28dp"
         android:text="Destination"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/destinationTV" />
+        app:layout_constraintTop_toBottomOf="@+id/departureTV" />
 
     <TextView
-        android:id="@+id/timeTV"
+        android:id="@+id/dateTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="128dp"
@@ -53,7 +53,17 @@
         android:layout_marginTop="20dp"
         android:text="Date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateTV" />
+        app:layout_constraintTop_toBottomOf="@+id/destinationTV" />
+
+    <Spinner
+        android:id="@+id/departureSpinner"
+        android:layout_width="124dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/departureTV"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/destinationSpinner"
@@ -61,29 +71,9 @@
         android:layout_height="24dp"
         android:layout_marginLeft="28dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/destinationTV"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Spinner
-        android:id="@+id/dateSpinner"
-        android:layout_width="124dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/dateTV"
-        app:layout_constraintTop_toBottomOf="@+id/destinationSpinner" />
-
-    <Spinner
-        android:id="@+id/timeSpinner"
-        android:layout_width="124dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/timeTV"
-        app:layout_constraintTop_toBottomOf="@+id/dateSpinner" />
+        app:layout_constraintTop_toBottomOf="@+id/departureSpinner" />
 
     <Button
         android:id="@+id/proceedButton"
@@ -106,7 +96,7 @@
         android:layout_marginTop="80dp"
         android:text="@string/twoway"
         android:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@+id/timeTV"
+        app:layout_constraintTop_toBottomOf="@+id/dateTV"
         tools:layout_editor_absoluteX="16dp" />
 
     <TextView
@@ -154,7 +144,7 @@
         android:layout_marginTop="16dp"
         android:text="Time"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeTV" />
+        app:layout_constraintTop_toBottomOf="@+id/dateTV" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -162,9 +152,8 @@
         android:layout_height="24dp"
         android:layout_marginLeft="28dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/timeSpinner" />
+        tools:layout_editor_absoluteY="164dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -201,26 +190,15 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner5" />
 
     <Spinner
-        android:id="@+id/spinner7"
-        android:layout_width="124dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/spinner6" />
-
-    <Spinner
         android:id="@+id/spinner8"
         android:layout_width="124dp"
         android:layout_height="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:visibility="visible"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/spinner7" />
+        app:layout_constraintTop_toBottomOf="@+id/dateSelect2TV" />
 
     <TextView
         android:id="@+id/textView7"
@@ -237,13 +215,36 @@
         android:id="@+id/price2"
         android:layout_width="140dp"
         android:layout_height="37dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/spinner8" />
+
+    <TextView
+        android:id="@+id/dateSelectTV"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/taptorecord"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintStart_toEndOf="@+id/dateTV"
+        app:layout_constraintTop_toBottomOf="@+id/destinationSpinner" />
+
+    <TextView
+        android:id="@+id/dateSelect2TV"
+        android:layout_width="119dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/taptorecord"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/spinner6" />
 
 </android.support.constraint.ConstraintLayout>
