@@ -1,10 +1,13 @@
 package my.edu.tarc.hciprototype;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
@@ -24,15 +27,27 @@ public class PurchaseTicketActivity extends AppCompatActivity {
     CheckBox checkbox;
     TextView dateSelectTV, dateSelect2TV, tv2,tv3,tv4,tv6;
     Spinner spinner5, spinner6, spinner8;
+    Button proceed, btn1;
     String date, date2;
     DatePickerDialog datePickerDialog;
     java.sql.Date boardDate;
+    static boolean secondTicket;
+    static String trip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_ticket);
+        btn1 = (Button)findViewById(R.id.btnback6);
+        btn1.setPaintFlags(btn1.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         checkbox = findViewById(R.id.checkBox);
+        proceed = findViewById(R.id.proceedButton);
         tv2 = findViewById(R.id.textView2);
         tv3 = findViewById(R.id.textView3);
         tv4 = findViewById(R.id.textView4);
@@ -40,6 +55,15 @@ public class PurchaseTicketActivity extends AppCompatActivity {
         spinner5 = findViewById(R.id.spinner5);
         spinner6 = findViewById(R.id.spinner6);
         spinner8 = findViewById(R.id.spinner8);
+        secondTicket = false;
+
+        proceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PurchaseTicketActivity.this, SelectBusActivity.class);
+                startActivity(intent);
+            }
+        });
 
         dateSelect2TV = (TextView)findViewById(R.id.dateSelect2TV);
 
@@ -66,6 +90,7 @@ public class PurchaseTicketActivity extends AppCompatActivity {
                     spinner8.setVisibility(View.GONE);
                     dateSelect2TV.setVisibility(View.GONE);
                 }
+                secondTicket ^= true;
             }
         });
 

@@ -9,27 +9,54 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PurchaseTicketActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectTaskActivity" />
-        <activity android:name=".MakePayment" />
-        <!-- <activity android:name=".SelectBusActivity"/> -->
-        <activity android:name=".SelectSeat" />
-        <!-- <activity android:name=".MakePayment"></activity> -->
-        <activity android:name=".BankDetailActivity" />
-        <activity android:name=".BankOTPActivity" />
-        <activity android:name=".PaymentMadeActivity" />
-        <activity android:name=".ViewModifyTicket" />
-        <activity android:name=".ViewTicket" />
-        <activity android:name=".EditTicket" />
-        <activity android:name=".EditSeat" />
-        <activity android:name=".ModifiedTicketActivity" />
-        <activity android:name=".EditTicketSelectedBusActivity"></activity>
+        <activity
+            android:name=".PurchaseTicketActivity"
+            android:label="Purchase Ticket" />
+        <activity
+            android:name=".MakePayment"
+            android:label="Make Payment" />
+        <activity
+            android:name=".SelectSeat"
+            android:label="Select Seats" />
+        <activity
+            android:name=".BankDetailActivity"
+            android:label="Fill in Bank Details" />
+        <activity
+            android:name=".BankOTPActivity"
+            android:label="Confirm Payment" />
+        <activity
+            android:name=".PaymentMadeActivity"
+            android:label="Payment Succeed" />
+        <activity
+            android:name=".ViewModifyTicket"
+            android:label="View/Modify Tickets" />
+        <activity
+            android:name=".SelectTaskActivity"
+            android:label="@string/hiTheam" />
+        <activity
+            android:name=".SelectBusActivity"
+            android:label="Select Bus" />
+        <activity
+            android:name=".ViewTicket"
+            android:label="View Ticket" />
+        <activity
+            android:name=".EditTicket"
+            android:label="Modify Ticket" />
+        <activity
+            android:name=".ModifiedTicketActivity"
+            android:label="Modify Succeed" />
+        <activity
+            android:name=".EditTicketSelectedBusActivity"
+            android:label="Confirm Edit" />
     </application>
 
 </manifest>

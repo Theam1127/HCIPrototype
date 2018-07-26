@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ViewModifyTicket">
 
+    <Button
+        android:id="@+id/btnback9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView41"
         android:layout_width="380dp"
@@ -26,9 +42,8 @@
         android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="80dp"
         android:text="Ticket 1"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -37,23 +52,30 @@
 
     <Button
         android:id="@+id/button29"
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_blue_light"
         android:text="View"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button30"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button30"
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="152dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_orange_dark"
         android:text="Edit"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView42"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,10 +83,9 @@
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Kampar ==> Kepong Sentral"
+        android:layout_marginTop="16dp"
+        android:text="Ipoh ==> Kepong"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +95,6 @@
         android:id="@+id/textView44"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Date: 19/05/2018"
@@ -86,7 +106,6 @@
         android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Time: 3.00 AM"
@@ -98,11 +117,11 @@
         android:id="@+id/textView46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:text="Ticket 2"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView45" />
 
@@ -110,11 +129,11 @@
         android:id="@+id/textView47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Kepong Sentral ==> Kampar"
+        android:layout_marginTop="16dp"
+        android:text="Kepong ==> Ipoh"
         android:textColor="@android:color/black"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -132,23 +151,30 @@
 
     <Button
         android:id="@+id/button31"
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="124dp"
+        android:background="@android:color/holo_blue_light"
         android:text="View"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button32"
         app:layout_constraintTop_toBottomOf="@+id/button29" />
 
     <Button
         android:id="@+id/button32"
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginStart="168dp"
+        android:layout_marginStart="172dp"
         android:layout_marginTop="124dp"
+        android:background="@android:color/holo_orange_dark"
         android:text="Edit"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView46"
         app:layout_constraintTop_toBottomOf="@+id/button30" />
 
@@ -168,11 +194,11 @@
         android:id="@+id/textView50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:text="Ticket 3"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
@@ -180,11 +206,11 @@
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="Kuala Lumpur ==> Selangor"
         android:textColor="@android:color/black"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
@@ -214,12 +240,17 @@
 
     <Button
         android:id="@+id/button33"
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="236dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="124dp"
+        android:background="@android:color/holo_blue_light"
         android:text="View"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView50"
         app:layout_constraintTop_toBottomOf="@+id/button31" />
 </android.support.constraint.ConstraintLayout>

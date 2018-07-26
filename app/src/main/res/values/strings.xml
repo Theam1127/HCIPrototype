@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">HCI Prototype</string>
+    <string name="app_name">Star Bus Ticketing</string>
+    <string name="hiTheam">Hi Theam!</string>
     <string name="lostpassword"><u>Forgot password</u></string>
     <string name="password">Password</string>
     <string name="twoway">Buy two-way Ticket?</string>
@@ -13,14 +14,32 @@
         <item>China</item>
         <item>United State America</item>
     </string-array>
+    <string-array name="tickets">
+        <item>Kepong ==> Ipoh</item>
+        <item>Ipoh ==> Kepong</item>
+    </string-array>
+    <string-array name="selectVenues">
+        <item>Ipoh</item>
+        <item>Kepong</item>
+        <item>Segambut</item>
+        <item>KL Sentral</item>
+    </string-array>
     <string-array name="selecteddate">
         <item>20/09/2018</item>
         <item></item>
     </string-array>
     <string-array name="selectedtime">
         <item>3:00 PM</item>
-        <item></item>
+        <item>5:00 PM</item>
+        <item>7:00 PM</item>
     </string-array>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
 
 </resources>

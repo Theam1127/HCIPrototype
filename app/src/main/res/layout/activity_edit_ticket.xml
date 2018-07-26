@@ -6,15 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".EditTicket">
 
+    <Button
+        android:id="@+id/btnback4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Ticket 1"
+        android:text="Ticket 1 - Kepong ==> Ipoh"
         android:textColor="@android:color/black"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,11 +38,11 @@
         android:id="@+id/textView62"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:text="Date: "
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
@@ -34,33 +50,34 @@
         android:id="@+id/textView63"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Tap here"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:hint="@string/taptoselect"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView62"
         app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
     <TextView
         android:id="@+id/textView64"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:layout_height="27dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:text="Time : "
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView62" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="123dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/spinner_layout"
+        android:entries="@array/selectedtime"
         app:layout_constraintStart_toEndOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView63" />
 
@@ -68,11 +85,11 @@
         android:id="@+id/textView66"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:text="Bus :"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView64" />
 
@@ -80,9 +97,8 @@
         android:id="@+id/imageView7"
         android:layout_width="179dp"
         android:layout_height="140dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView66"
         app:srcCompat="@drawable/click_here" />
