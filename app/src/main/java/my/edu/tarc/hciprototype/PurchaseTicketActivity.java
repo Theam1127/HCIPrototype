@@ -26,6 +26,7 @@ public class PurchaseTicketActivity extends AppCompatActivity {
     Spinner spinner5, spinner6, spinner8;
     String date, date2;
     DatePickerDialog datePickerDialog;
+    java.sql.Date boardDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,11 +79,12 @@ public class PurchaseTicketActivity extends AppCompatActivity {
                     month_calendar1 = calendar.get(Calendar.MONTH);
                     year_calendar1 = calendar.get(Calendar.YEAR);
                 }
-                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
+
                 datePickerDialog = new DatePickerDialog(PurchaseTicketActivity.this, new DatePickerDialog.OnDateSetListener(){
 
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+
 
                         day_calendar1 = day;
                         month_calendar1 = month;
@@ -96,9 +98,12 @@ public class PurchaseTicketActivity extends AppCompatActivity {
                         dateSelectTV.setTextColor(Color.BLACK);
                     }
                 }, year_calendar1, month_calendar1, day_calendar1);
+                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
                 datePickerDialog.show();
+
             }
         });
+
 
         dateSelect2TV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,6 +128,7 @@ public class PurchaseTicketActivity extends AppCompatActivity {
                         dateSelect2TV.setTextColor(Color.BLACK);
                     }
                 }, year_calendar2, month_calendar2, day_calendar2);
+                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
                 datePickerDialog.show();
             }
         });
