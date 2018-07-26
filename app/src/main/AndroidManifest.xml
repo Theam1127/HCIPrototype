@@ -27,7 +27,9 @@
         <activity android:name=".ViewModifyTicket" />
         <activity android:name=".ViewTicket" />
         <activity android:name=".EditTicket" />
-        <activity android:name=".EditSeat"/>
+        <activity android:name=".EditSeat" />
+        <activity android:name=".ModifiedTicketActivity" />
+        <activity android:name=".EditTicketSelectedBusActivity"></activity>
     </application>
 
 </manifest>

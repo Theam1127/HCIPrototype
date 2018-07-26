@@ -8,11 +8,19 @@
     </string-array>
     <string name="taptoselect"><u>Tap to Select</u></string>
     <string-array name="country">
-    <item>Malaysia</item>
-    <item>Singapore</item>
-    <item>China</item>
-    <item>United State America</item>
-</string-array>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>China</item>
+        <item>United State America</item>
+    </string-array>
+    <string-array name="selecteddate">
+        <item>20/09/2018</item>
+        <item></item>
+    </string-array>
+    <string-array name="selectedtime">
+        <item>3:00 PM</item>
+        <item></item>
+    </string-array>
 
 
 </resources>
