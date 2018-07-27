@@ -19,7 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
@@ -27,8 +26,6 @@
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView53"
         app:layout_constraintVertical_bias="1.0" />
@@ -68,6 +65,7 @@
         android:background="@android:color/holo_blue_light"
         android:text="View"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -81,6 +79,7 @@
         android:background="@android:color/holo_orange_dark"
         android:text="Edit"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/button29"
         app:layout_constraintTop_toTopOf="parent" />
@@ -164,6 +163,7 @@
         android:background="@android:color/holo_blue_light"
         android:text="View"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button29" />
@@ -177,6 +177,7 @@
         android:background="@android:color/holo_orange_dark"
         android:text="Edit"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/button31"
         app:layout_constraintTop_toBottomOf="@+id/button30" />
@@ -251,6 +252,7 @@
         android:background="@android:color/holo_blue_light"
         android:text="View"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

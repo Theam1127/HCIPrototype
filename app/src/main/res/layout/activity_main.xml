@@ -75,6 +75,7 @@
         android:background="@android:color/holo_blue_light"
         android:text="Login"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/forgotpasswrd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

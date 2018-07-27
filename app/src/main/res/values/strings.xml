@@ -4,6 +4,7 @@
     <string name="lostpassword"><u>Forgot password</u></string>
     <string name="password">Password</string>
     <string name="twoway">Buy two-way Ticket?</string>
+    <string name="backtohome"><u>Back to Home</u></string>
     <string-array name="report_type">
         <item>Monthly Sales</item>
     </string-array>

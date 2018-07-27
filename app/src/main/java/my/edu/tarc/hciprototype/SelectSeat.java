@@ -50,7 +50,7 @@ public class SelectSeat extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selectedSeats.append("S3, ");
-                s3.setBackgroundColor(Color.parseColor("#ff0099cc"));
+                s3.setBackgroundColor(Color.GREEN);
             }
         });
 
@@ -58,7 +58,7 @@ public class SelectSeat extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 selectedSeats.append("S4");
-                s4.setBackgroundColor(Color.parseColor("#ff0099cc"));
+                s4.setBackgroundColor(Color.GREEN);
             }
         });
         proceed.setOnClickListener(new View.OnClickListener() {
