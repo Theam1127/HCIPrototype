@@ -10,26 +10,21 @@
     </string-array>
     <string name="taptoselect"><u>Tap to Select</u></string>
     <string-array name="country">
+        <item>--Select--</item>
         <item>Malaysia</item>
         <item>Singapore</item>
         <item>China</item>
         <item>United State America</item>
     </string-array>
-    <string-array name="tickets">
-        <item>Kepong ==> Ipoh</item>
-        <item>Ipoh ==> Kepong</item>
-    </string-array>
     <string-array name="selectVenues">
+        <item>--Select--</item>
         <item>Ipoh</item>
         <item>Kepong</item>
         <item>Segambut</item>
         <item>KL Sentral</item>
     </string-array>
-    <string-array name="selecteddate">
-        <item>20/09/2018</item>
-        <item></item>
-    </string-array>
     <string-array name="selectedtime">
+        <item>--Select--</item>
         <item>3:00 PM</item>
         <item>5:00 PM</item>
         <item>7:00 PM</item>
