@@ -252,7 +252,7 @@
             android:id="@+id/spinner8"
             android:layout_width="124dp"
             android:layout_height="26dp"
-            android:layout_marginStart="68dp"
+            android:layout_marginStart="70dp"
             android:layout_marginTop="48dp"
             android:background="@drawable/spinner_layout"
             android:entries="@array/selectedtime"
