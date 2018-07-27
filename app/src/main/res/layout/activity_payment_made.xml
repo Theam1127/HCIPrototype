@@ -51,10 +51,9 @@
         android:id="@+id/textView49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="84dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="32dp"
-        android:text="Kepong ==> Kampar.pdf"
+        android:text="Kepong ==> Ipoh.pdf"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
@@ -65,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="24dp"
-        android:text="Kampar ==> Kepong.pdf"
+        android:text="Ipoh ==> Kepong.pdf"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView49" />
