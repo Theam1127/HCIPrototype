@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView65"
-        app:srcCompat="@drawable/img2" />
+        app:srcCompat="@drawable/img4" />
 
     <TextView
         android:id="@+id/textView67"
