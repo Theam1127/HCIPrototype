@@ -82,7 +82,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/spinner_layout"
-        android:entries="@array/selectedtime"
+        android:entries="@array/selectedMasa"
         app:layout_constraintStart_toEndOf="@+id/textView61"
         app:layout_constraintTop_toBottomOf="@+id/spinner4" />
 
